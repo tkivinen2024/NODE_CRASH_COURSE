@@ -46,9 +46,8 @@ const server = http.createServer((req, res) => {
                 res.end(content);
                 //res.end(path.join(__dirname, 'public', 'index.html'))
             }
-        )
+        );
     }
-
 
     // console.log(req.url);
     if (req.url === '/about') {
@@ -60,7 +59,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(200, {'Content-Type': 'text/html'});
                 res.end(content);
             }
-        )
+        );
     }
 
 
